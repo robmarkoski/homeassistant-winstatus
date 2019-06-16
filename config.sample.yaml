@@ -1,0 +1,32 @@
+
+general:
+  device_name: "my device name"
+  status_update: 5 # Seconds
+
+mqtt:
+  user: "mqtt username"
+  password: "mqtt password"
+  host: "192.168.0.1"
+  port: 1883 
+  discovery_prefix: "HomeAssistant"
+  qos: 0 
+
+speedtest:
+  update: 60 # Dont want to hammer Speedtest
+  monitor:
+    - download
+    - upload
+
+process_check:
+  - 'vlc.exe'
+  - 'Code.exe'
+
+disk_status:
+  - "C:"
+  - "x:"
+
+
+logging:
+  file_name: "winstatus.log"
+  level: error
+
